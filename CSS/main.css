@@ -1,0 +1,263 @@
+/* Estilos generales */
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #113946; /* Azul */
+    background-color: #fff2d87d; /* Café claro */
+    font-size: 15px;
+}
+
+h1, h2 {
+    font-family: 'Bodoni Moda', serif;
+    color: #113946; /* Azul */
+    font-size: 65px;
+}
+
+h3 {
+    font-family: 'Updock', cursive;
+    color: #d5a864; /* Café */
+    font-size: 55px;
+}
+
+.section-title {
+    border-bottom: 2px solid #113946; /* Azul */
+    padding-bottom: 10px;
+}
+
+/* Colores personalizados */
+.bg-primario {
+    background-color: #EAD7BB; /* Café claro */
+}
+
+.bg-secundario {
+    background-color: #D3BFA040; /* Café claro */
+}
+
+.text-primario {
+    color: #113946; /* Azul */
+}
+
+.text-secundario {
+    color: #D3BFA02B; /* Café claro */
+}
+
+/* Botones */
+.btn-primario {
+    background-color: #113946; /* Azul */
+    color: #FFF7E6; /* Café claro */
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primario:hover {
+    background-color: #bca37f; /* Café */
+    color: #fff2d8; /* Café claro */
+    transform: scale(1.05);
+}
+
+/* Asegurar que cada sección tenga al menos el tamaño de una página completa */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos para la sección "Sobre mí" */
+#sobre-mi h3 {
+    font-family: 'Updock', cursive;
+    color: #d5a864; /* Café */
+}
+
+#sobre-mi p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#sobre-mi .badge {
+    font-size: 1rem;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+#sobre-mi .badge i {
+    margin-right: 5px;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #fff2d87d; /* Café claro */
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    color: #113946; /* Azul */
+}
+
+.contact-form .form-control {
+    border: 2px solid #113946; /* Azul */
+    border-radius: 5px;
+}
+
+.contact-form .btn-primario {
+    background-color: #113946; /* Azul */
+    color: #fff2d8; /* Café claro */
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-form .btn-primario:hover {
+    background-color: #bca37f; /* Café */
+    transform: scale(1.05);
+}
+
+/* Estilos para la sección de inicio */
+.inicio {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff2d87d; /* Café claro */
+}
+
+/* Asegurar que cada sección tenga al menos el tamaño de una página completa */
+section, .inicio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fondo animado */
+#inicio {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffffff, #d5a86460); /* Azul y café */
+    animation: gradientMove 8s ease infinite;
+}
+
+/* Animación del fondo */
+@keyframes gradientMove {
+    0% {
+        background: linear-gradient(45deg, #ffffff, #d5a86460); /* Azul y café */
+    }
+    50% {
+        background: linear-gradient(45deg, #d5a86460, #ffffff); /* Café y azul */
+    }
+    100% {
+        background: linear-gradient(45deg, #ffffff, #d5a86460); /* Azul y café */
+    }
+}
+
+/* Estilo del contenedor */
+.content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+
+
+/* Efecto de máquina de escribir */
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black; /* Cursor */
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Estilo del texto */
+.lead {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones */
+.buttons {
+    margin-top: 30px;
+}
+
+
+
+/* Estilo de los enlaces sociales */
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #113946; /* Azul */
+}
+
+/* Estilo del avatar */
+.avatar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    z-index: 1; /* Asegúrate de que esté detrás del contenido */
+    opacity: 80; /* Ajusta la opacidad para que se mezcle con el fondo */
+}
+.social-link {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.social-link:hover {
+    transform: scale(1.1);
+    background-color: #f0e6d2;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+header .lead {
+    animation: fadeIn 2s ease forwards;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
